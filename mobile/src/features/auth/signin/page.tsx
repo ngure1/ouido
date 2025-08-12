@@ -41,10 +41,16 @@ const SigninPage = () => {
       </View>
 
       <View style={{ flex: 0.95, justifyContent: "center", alignItems: "center" }}>
-        <Text style={styles.titleStyles} variant="title">
+        <Text
+          style={styles.titleStyles}
+          variant="title"
+        >
           Sign In
         </Text>
-        <Text variant="caption" style={styles.subtitleStyles}>
+        <Text
+          variant="caption"
+          style={styles.subtitleStyles}
+        >
           Welcome back, we&apos;re sure you have had a pleasant experience!!
         </Text>
 
@@ -78,9 +84,15 @@ const SigninPage = () => {
                 rightComponent={
                   <Pressable onPress={() => setShowPassword(!showPassword)}>
                     {showPassword ? (
-                      <EyeOff size={20} color={muted} />
+                      <EyeOff
+                        size={20}
+                        color={muted}
+                      />
                     ) : (
-                      <Eye size={20} color={muted} />
+                      <Eye
+                        size={20}
+                        color={muted}
+                      />
                     )}
                   </Pressable>
                 }
@@ -92,7 +104,11 @@ const SigninPage = () => {
 
           <Text style={styles.footerText}>
             Don&apos;t have an account?{" "}
-            <Link href={"/(auth)/sign-up"} replace textStyle={{ fontSize: 14 }}>
+            <Link
+              href={"/(auth)/sign-up"}
+              replace
+              textStyle={{ fontSize: 14 }}
+            >
               Sign up
             </Link>
           </Text>

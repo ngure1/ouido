@@ -47,10 +47,16 @@ const SignupPage = () => {
           alignItems: "center",
         }}
       >
-        <Text style={styles.titleStyles} variant="title">
+        <Text
+          style={styles.titleStyles}
+          variant="title"
+        >
           Create an account
         </Text>
-        <Text variant="caption" style={styles.subtitleStyles}>
+        <Text
+          variant="caption"
+          style={styles.subtitleStyles}
+        >
           Welcome to ouido, the best task manager there !!
         </Text>
         <View style={styles.formStyles}>
@@ -82,9 +88,15 @@ const SignupPage = () => {
                 rightComponent={
                   <Pressable onPress={() => setShowPassword(!showPassword)}>
                     {showPassword ? (
-                      <EyeOff size={20} color={muted} />
+                      <EyeOff
+                        size={20}
+                        color={muted}
+                      />
                     ) : (
-                      <Eye size={20} color={muted} />
+                      <Eye
+                        size={20}
+                        color={muted}
+                      />
                     )}
                   </Pressable>
                 }
@@ -95,7 +107,11 @@ const SignupPage = () => {
 
           <Text style={styles.footerText}>
             Already have an account?{" "}
-            <Link href={"/(auth)/sign-in"} replace textStyle={{ fontSize: 14 }}>
+            <Link
+              href={"/(auth)/sign-in"}
+              replace
+              textStyle={{ fontSize: 14 }}
+            >
               Sign in
             </Link>
           </Text>

@@ -1,1 +1,2 @@
+cd mobile
 bunx lint-staged
