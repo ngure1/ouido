@@ -52,6 +52,8 @@
   },
   "private": true,
   "lint-staged": {
-    "*.js": "prettier --write ."
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write"
+    ]
   }
 }
