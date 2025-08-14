@@ -14,6 +14,12 @@ func (s *FiberServer) RegisterFiberRoutes() {
 		MaxAge:           300,
 	}))
 
+	// middleware for protected routes
+	s.App.Use([]string{"/protected"}, s.AuthMiddleware())
+
 	s.App.Post("/signup", s.SignUpHandler)
-	s.App.Post("/login", s.LoginHandler)
+	s.App.Post("/signin", s.SigninHandler)
+
+	// example of a protected route
+	s.App.Get("/protected", s.ProtectedHandler)
 }
