@@ -2,6 +2,7 @@ package server
 
 import (
 	"github.com/gofiber/fiber/v2"
+	"gorm.io/gorm"
 
 	"api/internal/database"
 )
@@ -9,7 +10,7 @@ import (
 type FiberServer struct {
 	*fiber.App
 
-	db database.Service
+	db *gorm.DB
 }
 
 func New() *FiberServer {
